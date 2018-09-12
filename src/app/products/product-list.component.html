@@ -1,6 +1,6 @@
 <div class= "card">
   <div class= "card-header">
-    Product List
+    {{pageTitle}}
   </div>
   <div class="card-body">
     <div class="row">
@@ -14,5 +14,26 @@
         <h4>Filtered By:</h4>
       </div>
     </div>
+    <div class="table-responsive">
+      <table class="table" *ngIf="products && products.length">
+        <thead>
+          <tr>
+            <th>
+              <button class="btn btn-primary">
+                Show Image
+              </button>
+            </th>
+            <th>Product</th>
+            <th>Code</th>
+            <th>Available</th>
+            <th>Price</th>
+            <th>Star</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
   </div>
+
 </div>
